@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>TechLearn | Funções em JavaScript</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link 
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" 
+        rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="cabecalho">
+        <div class="logo">
+            <span class="logo-simbolo">&lt;/&gt;</span>
+            <span>Tech<span class="logo-destaque">Learn</span></span>
+        </div>
+
+        <nav class="menu">
+            <a href="#inicio">Início</a>
+            <a href="#sobre">Sobre</a>
+            <a href="#curiosidade">Curiosidade</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="hero" id="inicio">
+
+            <div class="hero-conteudo">
+
+                <span class="etiqueta">
+                    ✦ JAVASCRIPT NA PRÁTICA
+                </span>
+
+                <h1>
+                    Descubra o poder das
+                    <span>funções</span>
+                    em JavaScript.
+                </h1>
+
+                <p class="descricao">
+                    Uma pequena interação pode transformar uma página inteira.
+                    Clique no botão abaixo e veja uma função JavaScript sendo
+                    executada em tempo real.
+                </p>
+
+                <div class="cartao-interacao">
+
+                    <div class="icone-codigo">
+                        &lt;/&gt;
+                    </div>
+
+                    <div class="conteudo-mensagem">
+
+                        <span class="pequeno-titulo">
+                            MENSAGEM DO SISTEMA
+                        </span>
+
+                        <p class="mensagem">
+                            Clique no botão para executar a função.
+                        </p>
+
+                    </div>
+
+                    <button class="botao" type="button">
+                        Executar função
+                        <span>→</span>
+                    </button>
+
+                </div>
+
+            </div>
+
+            <div class="codigo-decorativo">
+
+                <div class="janela-codigo">
+
+                    <div class="barra-codigo">
+                        <div class="bolinhas">
+                            <span class="vermelho"></span>
+                            <span class="amarelo"></span>
+                            <span class="verde"></span>
+                        </div>
+
+                        <span>script.js</span>
+                    </div>
+
+                    <div class="codigo">
+
+                        <p>
+                            <span class="linha">01</span>
+                            <span class="azul">const</span>
+                            <span class="branco">botao</span>
+                            <span class="rosa">=</span>
+                            <span class="branco">document</span>.
+                            <span class="amarelo">querySelector</span>
+                            <span class="branco">(</span>
+                            <span class="verde">".botao"</span>
+                            <span class="branco">);</span>
+                        </p>
+
+                        <p>
+                            <span class="linha">02</span>
+                            <span class="azul">const</span>
+                            <span class="branco">mensagem</span>
+                            <span class="rosa">=</span>
+                            <span class="branco">document</span>.
+                            <span class="amarelo">querySelector</span>
+                            <span class="branco">(</span>
+                            <span class="verde">".mensagem"</span>
+                            <span class="branco">);</span>
+                        </p>
+
+                        <br>
+
+                        <p>
+                            <span class="linha">04</span>
+                            <span class="azul">function</span>
+                            <span class="amarelo">mostrarMensagem</span>
+                            <span class="branco">() {</span>
+                        </p>
+
+                        <p class="indentado">
+                            <span class="linha">05</span>
+                            <span class="branco">mensagem.textContent</span>
+                            <span class="rosa">=</span>
+                        </p>
+
+                        <p class="indentado">
+                            <span class="linha">06</span>
+                            <span class="verde">
+                                "Função executada com sucesso! 🚀"
+                            </span>;
+                        </p>
+
+                        <p>
+                            <span class="linha">07</span>
+                            <span class="branco">}</span>
+                        </p>
+
+                        <br>
+
+                        <p>
+                            <span class="linha">09</span>
+                            <span class="branco">botao.addEventListener</span>
+                            <span class="branco">(</span>
+                            <span class="verde">"click"</span>,
+                            <span class="branco">mostrarMensagem);</span>
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <section class="sobre" id="sobre">
+
+            <div class="titulo-secao">
+                <span>01</span>
+                <div>
+                    <p class="mini-label">ENTENDA O CONCEITO</p>
+                    <h2>O que está acontecendo?</h2>
+                </div>
+            </div>
+
+            <div class="cards">
+
+                <article class="card">
+                    <div class="numero-card">01</div>
+
+                    <h3>Uma função</h3>
+
+                    <p>
+                        Criamos uma função chamada
+                        <strong>mostrarMensagem()</strong>.
+                        Ela contém o código que será executado quando
+                        o usuário clicar no botão.
+                    </p>
+                </article>
+
+                <article class="card">
+                    <div class="numero-card">02</div>
+
+                    <h3>Um evento</h3>
+
+                    <p>
+                        O método
+                        <strong>addEventListener()</strong>
+                        observa o botão e identifica quando acontece
+                        um clique.
+                    </p>
+                </article>
+
+                <article class="card">
+                    <div class="numero-card">03</div>
+
+                    <h3>Uma alteração</h3>
+
+                    <p>
+                        Quando a função é executada, o texto da página
+                        é alterado através da propriedade
+                        <strong>textContent</strong>.
+                    </p>
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <section class="curiosidade" id="curiosidade">
+
+            <div class="curiosidade-conteudo">
+
+                <span class="etiqueta">VOCÊ SABIA?</span>
+
+                <h2>
+                    JavaScript pode transformar
+                    páginas estáticas em experiências interativas.
+                </h2>
+
+                <p>
+                    Com funções, eventos e manipulação do HTML, podemos
+                    criar interfaces que respondem às ações do usuário.
+                    É uma das bases do desenvolvimento web moderno.
+                </p>
+
+            </div>
+
+            <div class="simbolo-js">
+                JS
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer class="rodape">
+
+        <div class="logo">
+            <span class="logo-simbolo">&lt;/&gt;</span>
+            <span>Tech<span class="logo-destaque">Learn</span></span>
+        </div>
+
+        <p>
+            Projeto acadêmico • Funções em JavaScript
+        </p>
+
+        <span class="status">
+            ● Projeto funcionando
+        </span>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
